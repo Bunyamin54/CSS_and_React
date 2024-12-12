@@ -25,3 +25,19 @@
      border-radius: 10px;
 }
 
+
+
+.container {
+   background-color: antiquewhite;
+   margin: 50px ;   /*  4 tarafa 50 px margin verir */
+   margin: 10px 30px; /* 10px top ve bottom 30px left ve right */
+
+}
+
+.div {
+    background-color: rgb(74, 83, 175);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    /* //* tercih edilmiyor height: 30px; */
+}
