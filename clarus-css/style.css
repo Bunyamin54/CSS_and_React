@@ -31,6 +31,10 @@
    background-color: antiquewhite;
    margin: 50px ;   /*  4 tarafa 50 px margin verir */
    margin: 10px 30px; /* 10px top ve bottom 30px left ve right */
+   text-align: center  /* icerikleri ortalar */;
+ 
+   padding: 10px ; /* iceriklerle container arasina 10px bosluk verir */
+   padding: 10px 20px; /* 10px top ve bottom 20px left ve right */
 
 }
 
@@ -39,5 +43,10 @@
     margin-top: 10px;
     margin-bottom: 20px;
     width: 200px;
+    /* height: 200px; */
     /* //* tercih edilmiyor height: 30px; */
+    border-radius: 10px;
+
+    margin:20px auto;   /* right and left ortala  */
+    
 }
