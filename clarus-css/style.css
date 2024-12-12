@@ -51,11 +51,16 @@
     
 }
 
+
+ .box{
+    width: 200px;
+    border: 5px solid red;
+    padding: 10px;
+ }
+
 .content{
 
-     width: 200px;
-     border: 5px solid red;
-     padding: 10px;
+    
      box-sizing: content-box;
 
 
@@ -63,9 +68,7 @@
 
 .border{
  
-     width: 200px;
-     border : 5px solid red;    
-     padding: 10px;
+    
     box-sizing: border-box;
 
 }
