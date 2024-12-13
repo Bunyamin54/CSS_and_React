@@ -79,3 +79,22 @@
 
    text-align: center;
 }
+
+.style{
+
+    font-weight: bold;  /* kalın */
+    font-style: italic; /* italik */
+    text-decoration: underline; /* alt cizgi */
+
+
+    font-size : 20px;
+    font-family: Arial, sans-serif;
+    font-variant: small-caps;
+    text-align: center  /* icerikleri ortalar */;
+    text-decoration:solid underline;
+    text-transform:lowercase;
+    text-indent: 50px;
+
+    
+
+}
