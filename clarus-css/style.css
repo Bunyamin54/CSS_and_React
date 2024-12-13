@@ -91,10 +91,13 @@
     font-family: Arial, sans-serif;
     font-variant: small-caps;
     text-align: center  /* icerikleri ortalar */;
-    text-decoration:solid underline;
-    text-transform:lowercase;
-    text-indent: 50px;
+    text-decoration:solid underline; /* cizgi cekme */
+    text-transform:lowercase; /* kucuk harf */
+    text-indent: 50px; /* ilk satiri 50px kaydirir */
 
+    line-height: 50px; /* satir araligi */
+
+    letter-spacing: 5px; /* harf araligi */
     
 
 }
