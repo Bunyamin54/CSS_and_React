@@ -132,3 +132,25 @@
     
 
 }
+
+.spasing{
+
+    color: yellowgreen;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+
+}
+
+.indent{
+    text-indent: 20px;
+}
+
+
+.shadow{
+
+    text-align: right; /* icerikleri saglar */
+    text-shadow: 1px 1px 1px black; /* iceriklere golge verir */
+
+
+}
