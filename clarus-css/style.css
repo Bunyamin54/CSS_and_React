@@ -119,12 +119,16 @@
     font-variant: small-caps;
     
     text-decoration:solid underline; /* cizgi cekme */
-    text-transform:lowercase; /* kucuk harf */
+    text-transform:capitalize; /* il harfler buyuk harf */
     text-indent: 10px; /* ilk satiri 50px kaydirir */
 
     line-height: 20px; /* satir araligi */
 
     letter-spacing: 2px; /* harf araligi */
+
+    text-decoration: none; /* cizgi cekme  default*/
+
+    text-align: justify; /* icerikleri yaslar */
     
 
 }
