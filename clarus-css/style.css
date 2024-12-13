@@ -150,7 +150,21 @@
 .shadow{
 
     text-align: right; /* icerikleri saglar */
-    text-shadow: 1px 1px 1px black; /* iceriklere golge verir */
+    text-shadow: 1px 1px 2px 0.5; /* iceriklere golge verir */
 
+}
+
+.text-shadow{
+
+    text-shadow: 3px 5px 5px rgba(41, 58, 41, 0.933); /* iceriklere golge verir */
+}
+
+
+.box-shadow{
+
+      background-color: beige;
+      padding: 20px ;
+      border-radius: 10px;
+      box-shadow: 2px 5px 10px 0.5px rgba(7, 9, 7, 0.933); /* kutuya golge verir */
 
 }
