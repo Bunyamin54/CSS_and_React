@@ -1,0 +1,41 @@
+*  {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1 {
+
+    color : red;
+}
+
+ p.abc{
+
+      font-size: 20px;
+      font-size: 1cm;
+      font-size: 1 in;
+      font-size: 20px;
+}
+
+p.percent {
+
+    font-size:200%
+}
+
+ .div1{
+    background-color: tomato;
+    width : 50%
+ }
+
+.div2{
+    background-color: greenyellow;
+    width: 50%;
+}
+
+.div3{
+    background-color: aqua;
+    width: 50%;
+}
+
+/*  //* parent default 100 % dur verilemezse - yukseklik verilmezse otamatik height alir  - Body nin default yuksekligi yoktur . childlardan herhangi birisine % verildiginde calismaz */
