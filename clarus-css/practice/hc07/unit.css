@@ -81,5 +81,47 @@ p.percent {
 
 .float-img{
 
+    width: 30%;
+    float: left;
+    
       
 }
+
+
+
+.text1{
+    
+    clear: both;
+}
+
+.clear{
+    clear:both;
+}
+
+.box{
+
+    float: left;
+    font-size:2rem;
+    text-align: center;
+
+
+}
+
+
+.box1 {
+    background-color: aqua;
+    width:40%;
+
+}
+
+.box2 {
+    background-color: chartreuse;
+    width: 25%;
+}
+
+.box3 {
+    background-color: coral;
+    width: 15%;
+
+}
+
