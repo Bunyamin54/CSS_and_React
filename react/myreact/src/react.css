@@ -8,8 +8,8 @@
 
 .app{
     text-align: center;
-    margin-top: 20px;
     background-color: aqua;
     padding: 20px;
     width: 50%;
+    margin: 20px auto;
 }
