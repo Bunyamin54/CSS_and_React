@@ -26,6 +26,7 @@ p.percent {
  .div1{
     background-color: tomato;
     width : 50%
+
  }
 
 .div2{
@@ -39,3 +40,41 @@ p.percent {
 }
 
 /*  //* parent default 100 % dur verilemezse - yukseklik verilmezse otamatik height alir  - Body nin default yuksekligi yoktur . childlardan herhangi birisine % verildiginde calismaz */
+
+/*  //* parent default 100 % dur verilemezse - yukseklik verilmezse otamatik height alir  - Body nin default yuksekligi yoktur . childlardan herhangi birisine % verildiginde calismaz */
+
+  /*  //* Em  */
+  
+.div4{
+    background-color: aqua;
+    width: 50%;
+    font-size: 2em;
+}
+.div5{
+    background-color: rgb(102, 79, 155);
+    width: 50%;
+    font-size: 2em;
+}
+.div6{
+    background-color: rgb(196, 236, 52);
+    width: 50%;
+    font-size: 2em;
+}
+
+  /*   //* Rem  */
+
+.div7{
+    background-color: aqua;
+    width: 50%;
+    font-size: 2em;
+}
+.div8{
+    background-color: rgb(102, 79, 155);
+    width: 50%;
+    font-size: 2em;
+}
+.div9{
+    background-color: rgb(196, 236, 52);
+    width: 50%;
+    font-size: 2em;
+}
