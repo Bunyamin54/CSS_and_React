@@ -1,0 +1,14 @@
+*{
+
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1{
+    text-align:center;
+    background-color: aqua;
+    width: 50%;
+    margin: 0 auto;
+}
