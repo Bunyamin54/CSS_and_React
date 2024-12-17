@@ -214,3 +214,38 @@ eksempel :
  ----Fixed - sabit bir pozisyon alir. scroll edilse bile sabit kalir.
 
  ----Sticky navbar da ozellikle kullanilir. scroll edilince sabit kalir.
+
+
+ ? ** Desending Selector - parent elementin icindeki child elementi secmek icin kullanilir. 
+
+  .parent .child { color: red; }
+
+  .style span {
+        color: red;
+  }
+
+child selector 
+
+div > p { color: red; }  bu atasi parenti div olan div i secer 
+
+
+  // *  Pseudo Class - elementin durumunu belirlemek icin kullanilir. 
+
+  :hover - mouse uzerine gelince
+  :active - tiklandiginda
+  :focus - focus oldugunda
+  :first-child - ilk cocuk
+  :last-child - son cocuk
+  :nth-child - belirli bir cocuk
+  :nth-last-child - belirli bir cocuk
+  :nth-of-type - belirli bir tip
+  :nth-last-of-type - belirli bir tip
+  :first-of-type - ilk tip
+  :last-of-type - son tip
+  :only-child - tek cocuk
+  :only
+
+
+  h2 + p { color: red; }  h2 den sonra gelen p yi secer
+
+  
