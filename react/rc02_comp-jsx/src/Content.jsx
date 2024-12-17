@@ -5,6 +5,7 @@ export const Content = () => {
      //* local style objesi harici bir dosyadan da import edilebilir.
 
    const parStyle = {
+
     fontSize: "1.5em",  
     textAlign: "center",
     color: "blue",
@@ -17,8 +18,6 @@ export const Content = () => {
    const imgStyle = {
 
    borderRadious: "10px",
-
-  
     width: "400px",
     height: "300px",
     cursor: "pointer",
