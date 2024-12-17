@@ -1,8 +1,10 @@
-const Name = ({ name }) => {
-  //   console.log(props)
-  return (
-    <div>
-      <p>Hello {name}</p>
+
+
+const Name = () => {
+  return ( <div>
+      <h1>Hello Amet</h1>
+
+       <img src="https://cdn.pixabay.com/photo/2023/01/30/11/04/cat-7755394_640.jpg" alt="" />
     </div>
   )
 }
