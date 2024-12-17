@@ -3,16 +3,27 @@ import Name from './Name'
 
 const Person1 = (props) => {
   console.log(props)
+
+    const  {name, img, color} = props
+     //* destructuring ile props objesinden name, img ve color değişkenlerini çıkartma işlemi yapıldı.
   return (
-    <div>
+
+         <div>
+          <Name name={name} />
+          <img src={img} alt="cat-img" />
+          <p>Color : {color}</p>
+         </div>
+
+    // <div>
   
-       <Name/>
+      
+    //   <Name name={props.name} />
     
-     <img src={props.img} alt="cat-img" />
+    //  <img src={props.img} alt="cat-img" />
 
-      <p>Color : {props.color}</p>
+    //   <p>Color : {props.color}</p>
 
-    </div>
+    // </div>
   )
 }
 
