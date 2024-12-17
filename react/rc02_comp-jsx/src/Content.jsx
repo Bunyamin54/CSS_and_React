@@ -39,7 +39,7 @@ export const Content = () => {
   <img style={imgStyle}  src="https://cdn.pixabay.com/photo/2022/12/20/12/10/santa-7667744_640.jpg" alt="" />
     <p style={parStyle}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde, explicabo eum magni pariatur libero placeat esse corrupti. Culpa tempora debitis dicta eaque cumque, nobis quos harum. Saepe, quisquam hic.</p> <br />
 
-     <h3 className="content">Bu bir h3 elementir</h3>
+     <h3 className="content-h3">Bu bir h3 elementir</h3>
      </main>
   )
 }
