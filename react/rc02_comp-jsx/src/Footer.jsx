@@ -1,7 +1,11 @@
 
+  // * name ile export yapılırsa import edilirken süslü parantez içinde import edilir.
 
-const Footer = () => {
-  return ( <footer> Universitet i Agder </footer>
+export const Footer = () => {
+  return ( 
+  <footer> Universitet i Agder 
+
+  </footer>
   )
 }
 
