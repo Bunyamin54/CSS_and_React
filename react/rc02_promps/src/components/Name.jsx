@@ -1,10 +1,11 @@
 
+// * Havada destructuring yapılabilir.
 
-const Name = (props) => {
+const Name = ({name}) => {
   return ( 
   <div>
-     
-     <p>Hello {props.name}</p>
+      {/*havada destructuriing */}
+     <p>Hello {name}</p>
     
     </div>
   )
