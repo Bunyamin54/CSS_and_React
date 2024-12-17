@@ -33,3 +33,35 @@
 .box ~ p{
     color:rgb(199, 55, 139);
 }
+
+
+/*  //* Attribute selector */
+
+
+h1#outline {
+
+    color:blue;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid rgb(202, 18, 18);
+    border-radius: 50%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin : 1rem;
+
+
+
+}
+
+h1#outline:hover{
+    outline: 2px solid indigo;
+    outline-offset: 0.3rem;
+}
+
+input:hover{
+    outline: none;
+    outline: 3px solid rgb(179, 255, 0);
+    
+}
