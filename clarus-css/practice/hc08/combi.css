@@ -6,7 +6,7 @@
 }
 
 
-/*  //* DEsendend selector */
+/*  //* Desendend selector */
 
 .box p{
 
@@ -15,7 +15,21 @@
 
 }
 
+
 /*  //* Child selector parenti box olan tum h1 secer */
 .box > h1{
     color:blue;
+}
+
+/*  //* Adjacent selector box elementi kapandiktan sonraki ilk h1 elementini secer */ 
+  
+.box + h1{
+    color:rgb(199, 55, 139);
+}
+
+/*  //* General sibling selector box elementi kapndiktan sonraki tum p elementlerini secer  */ 
+
+
+.box ~ p{
+    color:rgb(199, 55, 139);
 }
