@@ -86,3 +86,17 @@ h1{
     bottom: 0;
     right: 0;
 }
+
+.center {
+
+    background-color: lightcoral;
+    position: absolute;
+    width: 3rem ;
+    height: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+     /*  //* + deger z index de asagi iter - deger yukari iter */
+
+}
