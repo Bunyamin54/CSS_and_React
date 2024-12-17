@@ -1,4 +1,5 @@
 
+import adam from "./img/adam.webp";
 
 export const Content = () => {
 
@@ -40,6 +41,10 @@ export const Content = () => {
     <p style={parStyle}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde, explicabo eum magni pariatur libero placeat esse corrupti. Culpa tempora debitis dicta eaque cumque, nobis quos harum. Saepe, quisquam hic.</p> <br />
 
      <h3 className="content-h3">Bu bir h3 elementir</h3>
+
+      <img src={adam} alt="adam" />
+
+         {/*  //*  jsx icersinde suslu acamamiz lazm  */}
      </main>
   )
 }
