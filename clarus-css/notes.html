@@ -249,3 +249,18 @@ div > p { color: red; }  bu atasi parenti div olan div i secer
   --- h2 + p { color: red; }  h2 den sonra gelen p yi secer
 
  --- h2 ~ p { color: red; }  h2 den sonra gelen p yi secer  sibling selector
+
+ -- h1 > p { color: red; }  h1 parenti olan p yi secer
+
+ //* Type gore
+
+ ^  baslayan kelimeyi se
+ $ biten kelimeyi sec 
+
+ eksempel : 
+  a[href^="https"] { color: red; }  https ile baslayan linkleri sec
+
+  a[href$=".com"] { color: red; }  .com ile biten linkleri sec
+
+  a[href*="google"] { color: red; }  google kelimesi gecen linkleri sec
+
