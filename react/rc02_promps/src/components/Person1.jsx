@@ -1,11 +1,14 @@
 
 import Name from './Name'
 
-const Person1 = (props) => {
-  console.log(props)
+// const Person1 = (props) => {
+  //* Havada desutructuring yapılabilir.
+const Person1 = ({name, img, color= "Hardal"}) => {
+  // console.log(props)
 
-    const  {name, img, color} = props
+    // const  {name, img, color} = props
      //* destructuring ile props objesinden name, img ve color değişkenlerini çıkartma işlemi yapıldı.
+
   return (
 
          <div>

@@ -6,7 +6,7 @@ function App () {
 
       <Person1 name="Ikizler Felix" 
       img="https://cdn.pixabay.com/photo/2024/07/01/07/11/cats-8864617_640.jpg"
-      color= "Gray"
+    
       />
      
       <Person1 name="Sahin Bey" 
