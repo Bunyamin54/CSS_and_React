@@ -3,10 +3,7 @@
 
 export const Footer = () => {
   return ( 
-  <footer> Universitet i Agder 
-
-  </footer>
+  <footer> Footer -- Universitet i Agder  </footer>
   )
 }
 
-export default Footer
