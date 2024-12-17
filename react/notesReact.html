@@ -106,3 +106,49 @@
      -- reuseble componentler olusturulabilir.   yeniden kullanailir componentler
 
      --invoke componentin cagrilmasidir 
+
+   tek satir icin  ()  kullanilir
+     function Header () {
+
+       return  <h1> Hello World </h1>
+     }
+
+       veya 
+
+
+     function Header () {
+
+        // sarmallama yapilir
+       return (
+        <h1> Hello World </h1>
+        <p>Bu bir header</p> )
+
+      }
+
+     function Header () {
+
+        // sarmallama yapilir
+       return <>
+         //* fragment  div olmadan kullanilir  componentler tek bir paket halinde sarmallar.. 
+        <h1> Hello World </h1>
+        <p>Bu bir header</p> 
+        </>
+
+      }
+
+
+      function Footer () {¨
+
+         // js kodu yazilabilir
+
+        return 
+          // jsx kodlari yazilir
+        <footer>
+          <p>Copy right by UIA</p>
+
+            
+        </footer>
+
+
+         // return kismi jsx   js kodu icin suslu {} parantez kullanilir
+      }
