@@ -4,3 +4,18 @@
     box-sizing:border-box;
 
 }
+
+
+/*  //* DEsendend selector */
+
+.box p{
+
+
+    color:red;
+
+}
+
+/*  //* Child selector parenti box olan tum h1 secer */
+.box > h1{
+    color:blue;
+}
