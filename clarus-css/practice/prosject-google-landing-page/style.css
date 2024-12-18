@@ -146,3 +146,46 @@ body {
    text-decoration: none;
 
 }
+ 
+/**  Footer */
+
+.footer {
+    position: fixed;
+   bottom: 0;
+   background-color:  #f2f2f2;
+    line-height: 40px;
+    width: 100%;
+}
+
+footer__country {
+
+    padding-left: 20px;
+    border-bottom: 1 px solid #e4e4e4;
+
+}
+
+
+.footer__left{
+    float: left;
+    padding-left: 15px;
+
+}
+
+.footer__right{
+    float: right;
+    padding-right: 21px;
+}
+
+.footer__item{
+    display: inline ;
+}
+.footer__link {
+    color: black;
+    padding: 0.5rem;
+    opacity: 0.7;
+}
+
+
+.footer__link:hover {
+    text-decoration: underline;
+}
