@@ -24,3 +24,47 @@ body {
 .header__right{
     float: right;
 }
+
+.header__item{
+
+    display: inline;  
+}
+
+.header__link{
+    color: black;
+    padding: 0.5rem;
+    opacity: 0.7;
+
+}
+
+ .header__link:hover{
+
+   text-decoration: underline;
+
+
+}
+
+.header__link--appicon{
+    opacity: 0.7;
+    vertical-align: middle;
+}
+
+.header__link--appicon:hover{
+    opacity: 1;
+}
+
+.header__link--button{
+    background-color: #498af4;
+    width: 70px;
+    height: 30px;
+    color: white;
+    border-radius: 4px; 
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+.header__link--button:hover{
+    background-color: #3c7adb;
+}
