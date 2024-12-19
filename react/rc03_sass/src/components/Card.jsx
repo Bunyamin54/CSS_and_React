@@ -1,10 +1,34 @@
 import React from 'react'
 import CardStyle from  '../scss/card.module.scss'
 
-const Card = () => {
+const Card = ({data}) => {
+  console.log(data)
   return (
-    <div>
-      Card
+    <div className={CardStyle.container}>
+      {data.map((item) => {
+
+        //* JS alani 
+
+        const {id, name, job, img, comment} = item
+
+            return ( 
+            <div key={id}  className={CardStyle.card}> 
+            <h1>{name}</h1>
+            <h3>{job}</h3>
+            <p>{comment}</p>
+          <img src={img} alt="" />
+          <div>
+            <button className={CardStyle.small}>Small</button>
+            <button className={CardStyle.large}>Large</button>
+          </div>
+
+
+             </div>
+            )
+          
+
+       } )}
+     
     </div>
   )
 }
