@@ -1,10 +1,10 @@
 import './Button.css'
 
-const Button = () => {
+const Button = ({btn}) => {
   return (
-    <div>
+    <div className='title'>
 
-        Button
+      <button className='btn-blue'>{btn}</button>
       
     </div>
   )
