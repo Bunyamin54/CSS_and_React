@@ -3,8 +3,8 @@ import FooterStyle from '../scss/footer.module.scss'
 
 const Footer = () => {
   return (
-    <div>
-      Copyright by UIA 2024
+    <div className={FooterStyle["footer"]}>
+     <p> Copyright by UIA {new Date().getFullYear()}</p>
     </div>
   )
 }
