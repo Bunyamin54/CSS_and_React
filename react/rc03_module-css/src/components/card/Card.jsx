@@ -1,6 +1,5 @@
-
-import Button from '../button/Button'
-import './Card.css'
+ import Button from '../button/Button'
+ import CardStyle from './Card.module.css';
 
 const Card = ({lang, btn, img}) => {
   return (
