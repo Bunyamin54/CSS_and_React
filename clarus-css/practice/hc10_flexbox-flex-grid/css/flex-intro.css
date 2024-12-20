@@ -9,9 +9,10 @@
 ul.nav{
 
   background-color: aqua;
-  padding: 1rem;
+  /* padding: 1rem; */
   list-style-type: none;
   text-align: center;
+  height: 10rem;
 
 
   display: flex;  
@@ -29,6 +30,19 @@ ul.nav{
    justify-content: flex-start;
    justify-content: end;
     justify-content: space-evenly;
+
+    align-items: center;
+
+    /* //* Align- item center Dikeyde Hizalar */
+
+    align-items: baseline;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: stretch; 
+    /* //*   DEfault deger */
+    align-items: center;
+
+    /* //*cok  satir saysi fazla ise align-item yerie align-content kullanilabilir block olarak hareket eder  */
   
 
 }
