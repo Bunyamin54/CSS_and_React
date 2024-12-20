@@ -55,3 +55,20 @@ ul.nav li {
   padding: 0.5rem;
   border-radius: 4px ;
 }
+
+
+.container{
+
+  margin-top: 2rem;
+  background-color: rgb(197, 197, 40);
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container * {
+  background-color: rgb(233, 85, 51);
+
+}
