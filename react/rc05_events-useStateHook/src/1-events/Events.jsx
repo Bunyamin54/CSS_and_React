@@ -9,6 +9,26 @@
 //? React ortaminda kullanilan event'larin bilindik tarayicilarda
 //? sorunsuz calismasini saglanir.
 
+import React from 'react'
+
+const Events = () => {
+
+  const handleClick = () => {
+
+    alert("Hello World")
+
+  }
+
+  return (
+    <div>
+
+      <button onClick={handleClick}>Click</button>
+      
+    </div>
+  )
+}
+
+export default Events
 
 
 //! message console'da guncellendigini ancak DOM'da guncellenmedigini gorduk.
