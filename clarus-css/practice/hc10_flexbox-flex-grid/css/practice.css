@@ -2,3 +2,35 @@
   box-sizing: border-box;
   padding: 0;
 }
+
+
+header {
+   background-color: #f8f5f1;
+   padding: 4rem;
+   display: flex;
+   gap: 1rem;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+
+section.img img{
+  width: 100%;
+  min-width: 300px;
+ 
+}
+
+
+section.text h1, 
+p{
+line-height: 2;}
+
+
+section.img {
+  flex: 1;
+}
+
+section.text {
+  flex: 2;
+  flex-basis: 300px;
+}
