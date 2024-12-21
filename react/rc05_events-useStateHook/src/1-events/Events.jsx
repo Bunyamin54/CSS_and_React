@@ -13,7 +13,7 @@ import React from 'react'
 
 const Events = () => {
 
-  let message = "Hello World"
+  let message = "EVENTS"
 
   const handleClick = (e) => {
 
@@ -62,5 +62,5 @@ export default Events
 //? 1. Statefull Classes (Class Components).
 //? 2. Hooks (Functional Components).
 
-//?Biz su ana kadar uygulamalarimizda Fonksiyonel Component'leri kullandik.
+//? Biz su ana kadar uygulamalarimizda Fonksiyonel Component'leri kullandik.
 //? Yaygin kullanim Fonksiyonel Component'lerdir.
