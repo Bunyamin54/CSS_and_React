@@ -13,16 +13,35 @@ import React from 'react'
 
 const Events = () => {
 
-  const handleClick = () => {
+  let message = "Hello World"
+
+  const handleClick = (e) => {
 
     alert("Hello World")
 
+    console.log(e)
+
+    console.log(e.target)
   }
+
+   
+  const handleChange = (e) => {
+    console.log(e.target)
+    message = "STATE CHANGED"
+    console.log(message)
+  }
+
+
 
   return (
     <div>
 
+      <h1>{message}</h1>
       <button onClick={handleClick}>Click</button>
+      <button onClick={() => alert("Deneme")}>Save</button>
+
+
+      <button onClick={handleChange}>Change</button>
       
     </div>
   )
