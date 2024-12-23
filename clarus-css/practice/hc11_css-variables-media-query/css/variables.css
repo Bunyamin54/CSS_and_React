@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smokum&display=swap');
+
+
 :root {
+
+  /* //* Color */
 
   --white:  #fff;
   --black:  #111;
@@ -9,11 +15,30 @@
   --dark-yellow: #f1c40f;
   --dark-red: #e74c3c;
   --vivid-orange: #c0392b;
+
+
+   /* //* font family */
+  --ff-roboto: "Roboto", sans-serif;
+  --ff-smokum: "Smokum", cursive;
+
+
+  /* //* font size */
+
+  --fs-3xl: 3rem;
+  --fs-2xl: 2rem;
+  --fs-xl: 1.8rem;
+  --fs-lg: 1.4rem;
+  --fs-md: 1rem;
+  --fs-xs: 0.6rem;
+  --fs-sm: 0.9rem;
+
 }
 
 
+
 h1{
-  color:var(--dark-red)
+  color:var(--dark-red) ;
+  font-family: var(--ff-smokum);
 }
 
 
@@ -26,4 +51,10 @@ button{
 button:hover{
   background-color: var(--dark-orange);
   cursor: pointer;
+}
+
+
+p{
+  font-family: var(--ff-roboto);
+  font-size: var(--fs-xl);
 }
