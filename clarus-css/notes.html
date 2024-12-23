@@ -349,67 +349,26 @@ eksempel :
 
   **** Media Query - responsive tasarim icin kullanilir.  
 
+   ekrana gore kosullandirma yapar.
 
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Smokum&family=Ysabeau:wght@100;200;300;500&display=swap");
+   default degeri screnn dir . 
 
-@import "theme.css";
-
-:root {
-  /*! Colors */
-  --white: #ffd;
-  --black: hsl(238, 94%, 6%);
-  --green: hsl(180, 83%, 24%);
-  --green-light: hsl(180, 83%, 40%);
-  --olive: hsl(72, 22%, 67%);
-  --yellow-dark: hsl(39, 84%, 53%);
-  --orange-dark: hsl(15, 98%, 30%);
-  --orange-vivid: hsl(15, 98%, 50%);
-  --orange-light: hsl(15, 90%, 65%);
-
-  /*! Font-Families  */
-  --ff-roboto: "Roboto", sans-serif;
-  --ff-smokum: "Smokum", cursive;
-
-  /*! Font-Sizes  */
-  --fs-3xl: 3rem;
-  --fs-2xl: 2rem;
-  --fs-xl: 1.8rem;
-  --fs-lg: 1.4rem;
-  --fs-md: 1rem;
-  --fs-xs: 0.6rem;
-  --fs-sm: 0.9rem;
+   @Media screen and (max-width: 600px) { color: red; } 600 px den kucuk ekranlarda calisir.
 
 
+   Bootstrap Ekran Boyutlari  -Breakpoints
 
-h1 {
-  color: var(--orange-dark);
-  font-family: var(--ff-roboto);
-}
+    576px sm 
+    768px md
+    992px lg
+    1200px xl
+    1400px xxl
+    
 
-p {
-  font-family: var(--ff-smokum);
-  font-size: var(--fs-3xl);
-}
+    Material UI
 
-button {
-  width: 100px;
-  padding: 1rem;
-  background-color: var(--purple);
-  font-size: var(--fs-lg);
-}
+    600px xs
+    960px sm
+    1280px md
+    1920px lg
 
-button:hover {
-  background-color: var(--green-light);
-}
-
-div.dark {
-  margin: 1rem;
-  box-shadow: var(--shadow-dark);
-  background-color: var(--orange-light);
-  border: 4px solid var(--green-light);
-}
-
-div.light {
-  margin: 1rem;
-  box-shadow: var(--shadow-light);
-}
