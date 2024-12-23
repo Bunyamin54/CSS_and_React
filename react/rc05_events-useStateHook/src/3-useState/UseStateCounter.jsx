@@ -18,15 +18,29 @@
 //?    https://react.dev/reference/react
 //* =============================================================
 
-
+import React, { useState } from 'react'
 
 
 const UseStateCounter = () => {
+    // let count = 0   ;
+
+
+     //* count adinda bir state tanimlamis olduk ve baslangic degeri 0 atadik 
+
+    const [count, setCount] = useState(0)
+
+    const handleInc= () => {
+        // count  = count + 1
+
+    setCount(count + 1)
+    
+        console.log(count)
+    }
   return (
     <div>
       <h2>USE STATE HOOK</h2>
-        <h1>Count:0</h1>
-        <button > INC</button>
+        <h1>Count:{count}</h1>
+        <button  onClick={handleInc}> INC</button>
         <button >CLR</button>
         <button >DEC</button>
       </div>
