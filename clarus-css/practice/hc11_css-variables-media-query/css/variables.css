@@ -3,6 +3,7 @@
   --white:  #fff;
   --black:  #111;
   --green: #2ecc71;
+  --green-light: #7dc69b; 
   --olive: #2c3e50;
   --dark-orange: #e67e22;
   --dark-yellow: #f1c40f;
@@ -13,4 +14,16 @@
 
 h1{
   color:var(--dark-red)
+}
+
+
+button{
+  width: 100px;
+  background-color: var(--green);
+  color: var(--white) ;
+}
+
+button:hover{
+  background-color: var(--dark-orange);
+  cursor: pointer;
 }
