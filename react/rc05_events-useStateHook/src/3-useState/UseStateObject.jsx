@@ -34,6 +34,8 @@ const [kisi, setKisi ] = useState (
       <button onClick={() => setSalary (salary + 5000)}>inc salary</button> */}
 
       <button onClick={() => setKisi({...kisi, name:"Mehmet Kan"})}>Change Name</button>
+      <button onClick={() => setKisi({...kisi, age: kisi.age +1})}>inc age</button>
+      <button onClick={() => setKisi({...kisi, salary: kisi.salary +3000})}>ing salary</button>
     
 
     </div>
