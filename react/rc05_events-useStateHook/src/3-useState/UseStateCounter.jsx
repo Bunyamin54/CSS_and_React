@@ -33,6 +33,7 @@ const UseStateCounter = () => {
         // count  = count + 1
 
           //* Bir statetin degeri sadece setter methodu ile olabilir. 
+          
     setCount(count + 1)
 
         console.log(count)
@@ -43,7 +44,9 @@ const UseStateCounter = () => {
         <h1>Count:{count}</h1>
         <button  onClick={handleInc}> INC</button>
         <button >CLR</button>
-        <button >DEC</button>
+
+         {/*  */}
+        <button onClick={ () => setCount(count -1 )} >DEC</button>
       </div>
    
   )
