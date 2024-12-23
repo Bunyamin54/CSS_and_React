@@ -38,6 +38,15 @@ const UseStateCounter = () => {
 
         console.log(count)
     }
+
+      const handleDec= () => {
+        if(count <=0){
+            alert("Count can not be less than 0")
+
+        }else {
+            setCount(count - 1)
+        }
+      }
   return (
     <div>
       <h2>USE STATE HOOK</h2>
@@ -46,7 +55,8 @@ const UseStateCounter = () => {
         <button onClick={() => setCount(0)} >CLR</button>
 
          {/*  */}
-        <button onClick={ () => setCount(count -1 )} >DEC</button>
+        {/* <button onClick={ () => setCount(count -1 )} >DEC</button> */}
+        <button onClick={handleDec} >DEC</button>
       </div>
    
   )
