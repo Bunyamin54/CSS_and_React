@@ -32,8 +32,9 @@ const UseStateCounter = () => {
     const handleInc= () => {
         // count  = count + 1
 
+          //* Bir statetin degeri sadece setter methodu ile olabilir. 
     setCount(count + 1)
-    
+
         console.log(count)
     }
   return (
