@@ -43,7 +43,7 @@ const UseStateCounter = () => {
       <h2>USE STATE HOOK</h2>
         <h1>Count:{count}</h1>
         <button  onClick={handleInc}> INC</button>
-        <button >CLR</button>
+        <button onClick={() => setCount(0)} >CLR</button>
 
          {/*  */}
         <button onClick={ () => setCount(count -1 )} >DEC</button>
