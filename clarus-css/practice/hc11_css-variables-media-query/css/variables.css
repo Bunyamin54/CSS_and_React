@@ -32,9 +32,13 @@
   --fs-xs: 0.6rem;
   --fs-sm: 0.9rem;
 
-}
+    /*! Shadows  */
+    --shadow-light: 0 0 10px rgba(0, 0, 0, 0.3);
+    --shadow-dark: 0 0 10px rgba(0, 0, 0, 0.6);
+  }
 
 
+  
 
 h1{
   color:var(--dark-red) ;
@@ -44,6 +48,7 @@ h1{
 
 button{
   width: 100px;
+  padding: 10px;
   background-color: var(--green);
   color: var(--white) ;
 }
@@ -51,10 +56,28 @@ button{
 button:hover{
   background-color: var(--dark-orange);
   cursor: pointer;
+  font-size: var(--fs-2xl);
 }
 
 
 p{
   font-family: var(--ff-roboto);
   font-size: var(--fs-xl);
+}
+
+div.dark{
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: var(--shadow-dark);
+  background-color: var(--olive);
+  color: var(--white);
+
+}
+
+div.light{
+  margin:1rem;
+  padding: 1rem;
+  box-shadow: var(--shadow-light);
+  background-color: var(--green-light);
+  color: var(--white);
 }
