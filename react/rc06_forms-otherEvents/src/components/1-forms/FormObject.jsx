@@ -20,7 +20,24 @@ const FormObject = () => {
     e.preventDefault (); //* sayfa yenilenmesini engeller. default davranisi engelle
 
     alert (`Username: ${username} Email: ${email} Password: ${password}`);
+
+
+    setFormData({username: '', email: '', password: ''}); //* formu submit ettikten sonra inputlari bosaltir.
+    
   
+  };
+
+   
+
+  const handleFormData = (e) => {
+
+    // console.log(e.target.value)
+    // console.log(e.target.name)
+    // console.log(e.target.id)
+
+     setFormData({...formData, [e.target.name ]:e.target.value}); //* inputun degerini alir ve statei gunceller.})
+
+
   };
 
   return (
@@ -35,10 +52,11 @@ const FormObject = () => {
             type="username"
             className="form-control"
             id="email"
+            name='username'
             aria-describedby="emailHelp"
             //* oncheange event inputun degeri her degistiiginde tetiklenir. bizde yazdgimiz event handler aracilgii ile statei guncelleyebilmis oluruz.
 
-            onChange={handleUsername}
+            onChange={handleFormData}
             value={username} //* inputlara baslangi degeri vermemizi saglar. onchange ilek ullaniriz ve statei guncelleyebiliriz.
           />
 
@@ -52,8 +70,9 @@ const FormObject = () => {
             className="form-control"
             id="email"
             aria-describedby="emailHelp"
-            onChange={e => setEmail (e.target.value)}
+            onChange={handleFormData}
             value={email}
+            name='email'
           />
 
         </div>
@@ -66,8 +85,9 @@ const FormObject = () => {
             type="password"
             className="form-control"
             id="password"
-            onChange={e => setPassword (e.target.value)}
+            onChange={handleFormData}
             value={password}
+            name='password'
           />
         </div>
         <div className="text-center">
