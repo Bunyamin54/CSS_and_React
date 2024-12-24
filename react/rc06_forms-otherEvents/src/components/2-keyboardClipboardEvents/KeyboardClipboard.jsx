@@ -18,9 +18,14 @@ const KeyboardClipboard = () => {
 
        onChange={(e) => {
         
-        e.target.value = e.target.value.toUpperCase()
+        // e.target.value = e.target.value.toUpperCase()
+     
         
-        setContent(e.target.value)}} />
+        setContent(e.target.value.toLocaleUpperCase())}}
+        
+        value={content}
+        
+        />
      
      
      
