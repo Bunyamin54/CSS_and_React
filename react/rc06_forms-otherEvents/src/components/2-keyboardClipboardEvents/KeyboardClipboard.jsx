@@ -23,6 +23,7 @@ const KeyboardClipboard = () => {
         
         setContent(e.target.value.toLocaleUpperCase())}}
         
+        onKeyDown={(e) => console.log(e.keyCode)}
         value={content}
         
         />
