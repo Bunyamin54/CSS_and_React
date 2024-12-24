@@ -7,10 +7,11 @@ import MouseEvent from "./components/3-mouseEvents/MouseEvent"
 function App() {
   return (
     <div>
-     <Form />
-      {/* <FormObject />
-     <KeyboardClipboard />
-     <MouseEvent /> */}
+      <FormObject />
+     {/* <Form /> */}
+      
+     {/* <KeyboardClipboard />
+     <MouseEvent /> */} */}
     </div>
   )
 }

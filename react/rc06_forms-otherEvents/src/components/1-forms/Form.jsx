@@ -20,7 +20,7 @@ const Form = () => {
       setEmail('')
       setUsername('')
       setPassword('')
-      
+
     }
 
 
@@ -55,6 +55,7 @@ const Form = () => {
             id="email"
             aria-describedby="emailHelp"
             onChange={(e) => setEmail(e.target.value)}
+            value={email}
           />
 
         </div>
@@ -64,7 +65,7 @@ const Form = () => {
             Password
           </label>
           <input type="password" className="form-control" id="password"
-          onChange={(e) => setPassword(e.target.value)} />
+          onChange={(e) => setPassword(e.target.value)} value={password}/>
         </div>
         <div className="text-center">
 
