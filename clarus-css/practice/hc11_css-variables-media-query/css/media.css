@@ -1,4 +1,5 @@
 @import "media.css";
+@import "theme.css";
 
 *{
   margin: 0;
@@ -6,20 +7,29 @@
   box-sizing:border-box;
 }
 
+body{
+  font-family: var(--roboto);
+}
+
 
 .container{
 
-  max-width: 1200px;
-  border: 2px solid red;
+  max-width: 1800px;
+  /* border: 2px solid red; */
    margin: 2rem auto;
 }
 
 nav{
   display: flex;
   justify-content: space-between;
-    padding: 1rem;
+
+  padding: 1rem;
   align-items: center;
   /* flex-wrap: wrap; */
+}
+
+nav img {
+  width: 250px;
 }
 
 /*  //* Media query */
@@ -28,6 +38,34 @@ nav{
   nav{
     flex-direction: column;
   }
+
+  nav img{
+    width: 250px;
+  }
+
+
+  header.hero{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+
+
+  header.hero img{
+    width: 250px;
+  }
+
+
+}
+@media screen and (max-width: 420px){
+  .section-btn {
+    display: flex;
+    flex-direction: column;
+}
+.section-btn button {
+    margin: 0.5rem 0;
+    width: 250px;
+}
 }
 
 
