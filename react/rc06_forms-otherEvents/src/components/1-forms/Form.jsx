@@ -27,7 +27,7 @@ const Form = () => {
              //* oncheange event inputun degeri her degistiiginde tetiklenir. bizde yazdgimiz event handler aracilgii ile statei guncelleyebilmis oluruz. 
 
             onChange={handleUsername}
-            value={username}  //* inputlara baslangi degeri vermemizi saglar. 
+            value={username}  //* inputlara baslangi degeri vermemizi saglar. onchange ilek ullaniriz ve statei guncelleyebiliriz.
           />
 
         </div>
