@@ -2,8 +2,15 @@ import React from 'react'
 
 const MouseEvent = () => {
   return (
-    <div>
-      mouse event
+    <div className='container text-center d-flex flex-column align-items-center mt-4'>
+      <h2 className='text-danger'>Moouse Event</h2>
+
+
+      <div id='todo-1' className='bg-success text-light w-50 p-4 '>todo item 1</div>
+      <div id='todo-2' className='bg-success text-light w-50 p-4 mt-4 '>todo item 2</div>
+      <div id='todo3' className='bg-success text-light w-50 p-4 mt-4 '>todo item 3</div>
+
+        <p>X and Y </p>
     </div>
   )
 }

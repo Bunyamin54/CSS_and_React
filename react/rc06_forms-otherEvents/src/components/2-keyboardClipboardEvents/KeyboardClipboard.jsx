@@ -9,6 +9,14 @@ const KeyboardClipboard = () => {
       e.preventDefault ();
     }
   };
+
+  const handlePaste = e => {
+     console.log(e.target)
+
+     e.target.className = 'form-control border border-danger border-4'
+     e.target.style.backgroundColor = 'green'
+     
+  }
   return (
     <div className="container">
 
@@ -31,7 +39,7 @@ const KeyboardClipboard = () => {
         <p>{content}</p>
       </div>
 
-      <textarea  className='form-control' name="" id=""  cols="30" rows="10"/>
+      <textarea  className='form-control' name="" id=""  cols="30" rows="10" onPaste={handlePaste}/>
     </div>
   );
 };
