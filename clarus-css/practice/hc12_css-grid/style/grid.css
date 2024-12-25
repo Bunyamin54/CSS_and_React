@@ -18,6 +18,8 @@
 .content {
  border: 1px solid red;
  background-color: #dede;
+ overflow: auto ;
+
 }
 
 .c6 img{
@@ -37,5 +39,14 @@
 
 
 
+
+}
+
+
+
+.content{
+    justify-content: center;
+    align-items:center;
+    display: flex;
 
 }
