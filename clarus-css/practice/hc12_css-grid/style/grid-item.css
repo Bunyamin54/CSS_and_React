@@ -62,3 +62,14 @@
     grid-column-end: 5;
     background-color: lightgreen;
 }
+
+.c12{
+    grid-column: span 3;
+    padding: 2rem;
+    background-color: lightblue;
+}
+
+.c14{
+    grid-row: span 2;
+    background-color: lightgray;
+}
