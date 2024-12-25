@@ -48,3 +48,11 @@ footer{
 }
 
 
+@media screen and (max-width:400px) { 
+    aside,
+    main {
+        grid-column: span 12;
+    }
+
+}
+    
