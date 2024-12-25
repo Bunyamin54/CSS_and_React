@@ -1,0 +1,21 @@
+*{
+    margin:0;
+  
+    box-sizing:border-box;
+
+}
+
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 4rem 1fr 2fr;
+    grid-template-columns: repeat(4, 1fr);
+    
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.content {
+ border: 1px solid red;
+ background-color: #dede;
+}
