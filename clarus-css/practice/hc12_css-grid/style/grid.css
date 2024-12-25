@@ -18,7 +18,7 @@
 .content {
  border: 1px solid red;
  background-color: #dede;
- overflow: auto ;
+
 
 }
 
@@ -48,5 +48,10 @@
     justify-content: center;
     align-items:center;
     display: flex;
+
+}
+
+.c2, .c4 {
+    overflow: auto;
 
 }
