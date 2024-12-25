@@ -5,7 +5,12 @@ const KeyboardClipboard = () => {
  const [ content, setContent] = useState("")
 
 
-
+const handelKeyDown = (e) => {
+  if (e.keyCode >= 48 && e.keyCode <= 57) {
+    alert('Please don´t use numbers')
+    e.preventDefault()
+  }
+}
   return (
 
     <div className='container'>
@@ -23,7 +28,7 @@ const KeyboardClipboard = () => {
         
         setContent(e.target.value.toLocaleUpperCase())}}
         
-        onKeyDown={(e) => console.log(e.keyCode)}
+        onKeyUp={handelKeyDown}
         value={content}
         
         />
