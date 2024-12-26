@@ -11,7 +11,7 @@ function  App () {
 
 </div>
 
-<div  className = "flex flex-col justify-between items-senter bg-slate-500 rounded-xl w-3/12 h-[250px] ">
+<div  className = "card">
   </div>
 
     </div>
