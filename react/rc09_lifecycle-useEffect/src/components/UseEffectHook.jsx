@@ -62,26 +62,37 @@ import { useState, useEffect } from "react"
   //   }, [count]) //? count state'i her degistiginde yukaridaki mount+update kismi calisitirilir.
 
   //! ComponentWillUnmount
-  
+   
 
   import React from 'react'
   
   const UseEffectHook = () => {
 
-    useEffect(() => {
-      //?cpmponentDidMount (Dependency Array bos ise)
-      //?componentDidMount + componentDidUpdate (Dependency array bos degilse)
-    
-      return () => {
-        //? componentWillUnmount
-      }
-    }, [third])  //? Dependency Array
-    
+   const[ count, setCount] = useState(0)
+
+  useEffect(() => {
+  
+  
+    return () => {
+      
+    }
+  }, [])
+  
+
+
+
+    const handleInc  = () => {
+      setCount(count + 1)
+    }
 
     return (
-      <div>
-        
-      </div>
+      <div className="container text-center">
+      <h1 className="text-danger">LIFECYCLE METHODS</h1>
+      <h3>COUNT={count}</h3>
+      <button className="btn btn-info" onClick={handleInc}>
+        INC
+      </button>
+    </div>
     )
   }
   
