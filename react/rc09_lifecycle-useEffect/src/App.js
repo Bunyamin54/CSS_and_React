@@ -1,6 +1,6 @@
 // import LifeCycleMethods from "./components/LifeCycleMethods"
-import { useState } from "react"
-import UseEffectHook from "./components/UseEffectHook"
+// import { useState } from "react"
+// import UseEffectHook from "./components/UseEffectHook"
 import User from "./components/User"
 
 function App() {
