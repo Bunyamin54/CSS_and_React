@@ -42,8 +42,7 @@ import { useState, useEffect } from "react"
 //     }
 //   }, [count]) //? Dependency Array
 
-const UseEffectHook = () => {
-  const [count, setCount] = useState(0)
+
 
   //!   ComponentDidMount
   //   useEffect(() => {
@@ -63,31 +62,28 @@ const UseEffectHook = () => {
   //   }, [count]) //? count state'i her degistiginde yukaridaki mount+update kismi calisitirilir.
 
   //! ComponentWillUnmount
-  const fetchData = () => {
-    console.log("Data Fetch started")
+  
+
+  import React from 'react'
+  
+  const UseEffectHook = () => {
+
+    useEffect(() => {
+      //?cpmponentDidMount (Dependency Array bos ise)
+      //?componentDidMount + componentDidUpdate (Dependency array bos degilse)
+    
+      return () => {
+        //? componentWillUnmount
+      }
+    }, [third])  //? Dependency Array
+    
+
+    return (
+      <div>
+        
+      </div>
+    )
   }
-  useEffect(() => {
-    const timer = setInterval(fetchData, 1000)
-
-    return () => {
-      clearInterval(timer)
-      console.log("componentWillUnmount")
-    }
-  }, [])
-
-  const handleInc = () => {
-    setCount(count + 1)
-  }
-  console.log("render")
-  return (
-    <div className="container text-center">
-      <h1 className="text-danger">USEEFFECT</h1>
-      <h3>COUNT={count}</h3>
-      <button className="btn btn-info" onClick={handleInc}>
-        INC
-      </button>
-    </div>
-  )
-}
-
-export default UseEffectHook
+  
+  export default UseEffectHook
+  

@@ -249,7 +249,10 @@
     @apply ile css classlarini birlestiririz  component bazinda css veririz
 
 
-    *** USE EFFECT HOOK 
+    *** USE EFFECT HOOK   -- 
+    
+    
+    REACT - LIFE CYCLE METHODLARI
 
 
     - componentdidmonunt ilk render sonrasi calisir
@@ -281,4 +284,23 @@
       console.log("component did update")
     }  herhangi bir state veya prop degisikliginde calisir. 
 
-    
+
+
+    *** unmount asamasi burasi    componentin silinmesi durumunda calisir
+
+    - componentWillUnmount  - cocugun olum anisi // kimlik karti silme
+
+    timer i clean yeri burasi   nettwork istekleri iptal etme yeri - componentin silinmesi durumunda calisir
+
+
+    once constructur 
+    sonra render
+    sonra componentDidMount  calisir  
+
+    state degisirse render calisir  ve componentDidUpdate calisir
+
+  Bir REACT componentinin 3 asamasi vardir  . 
+
+  mount
+  update
+  unmount
