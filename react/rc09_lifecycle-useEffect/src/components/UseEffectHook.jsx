@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import {useState, useEffect} from 'react';
 
 //?===============================================
 //?                USEEFFECT HOOK
@@ -42,71 +42,88 @@ import { useState, useEffect } from "react"
 //     }
 //   }, [count]) //? Dependency Array
 
+//!   ComponentDidMount
+//   useEffect(() => {
+//     //! fetch, async-await ,localStorage, setTimeout, setInterval();
+//     console.log("componentDidMount")
+//     setTimeout(() => {
+//       alert("Data fetched")
+//     }, 3000)
+//   }, []) //? Dependecny array bos
 
+//!   ComponentDidUpdate
+//   useEffect(() => {
+//     console.log("componentDidMount + componentDidUpdate")
+//     setTimeout(() => {
+//       alert("Data fetched")
+//     }, 3000)
+//   }, [count]) //? count state'i her degistiginde yukaridaki mount+update kismi calisitirilir.
 
-  //!   ComponentDidMount
-  //   useEffect(() => {
-  //     //! fetch, async-await ,localStorage, setTimeout, setInterval();
-  //     console.log("componentDidMount")
-  //     setTimeout(() => {
-  //       alert("Data fetched")
-  //     }, 3000)
-  //   }, []) //? Dependecny array bos
+//! ComponentWillUnmount
 
-  //!   ComponentDidUpdate
-  //   useEffect(() => {
-  //     console.log("componentDidMount + componentDidUpdate")
-  //     setTimeout(() => {
-  //       alert("Data fetched")
-  //     }, 3000)
-  //   }, [count]) //? count state'i her degistiginde yukaridaki mount+update kismi calisitirilir.
+import React from 'react';
 
-  //! ComponentWillUnmount
-   
+const UseEffectHook = () => {
+  const [count, setCount] = useState (0);
 
-  import React from 'react'
-  
-  const UseEffectHook = () => {
-
-   const[ count, setCount] = useState(0)
+  // ! Component DidMount
 
   // useEffect(() => {
 
-  //    // !  //! fetch, async-await ,localStorage, setTimeout, setInterval();
+  // !  //! fetch, async-await ,localStorage, setTimeout, setInterval();
 
   //     console.log("componnetDidMount")
   // setTimeout(() => {
   //   alert("Data fetched")
   // }, 2000)
   // }, [])  // ? Dependecny array bos
+
+  //!  ComponentDidUpdate
+  //   useEffect(() => {
+
+  // !  //! fetch, async-await ,localStorage, setTimeout, setInterval();
+
+  //      console.log("componnetDidMount + componentDidUpdate")
+  //  setTimeout(() => {
+  //    alert("Data fetched")
+  //  }, 2000)
+  //  }, [count])  // ? Dependecny array bos degil ise
+
+  // ! ComponentWillUnmount
+
+const fetchData = () => {
+  console.log("Data fetched")
+}
   
+useEffect(() => {
+  const timer = setInterval(fetchData,5000);
 
 
-  useEffect(() => {
+  return () => {
+    clearInterval(timer)
+    console.log("componentWillUnmount")
+  }
+}, [])
 
-    // !  //! fetch, async-await ,localStorage, setTimeout, setInterval();
 
-     console.log("componnetDidMount + componentDidUpdate")
- setTimeout(() => {
-   alert("Data fetched")
- }, 2000)
- }, [count])  // ? Dependecny array bos
- 
 
-    const handleInc  = () => {
-      setCount(count + 1)  //? count state'i her degistiginde yukaridaki mount+update kismi calisitirilir.
-    }
 
-    return (
-      <div className="container text-center">
+
+
+
+  const handleInc = () => {
+    setCount (count + 1); //? count state'i her degistiginde yukaridaki mount+update kismi calisitirilir.
+  };
+
+  return (
+    <div className="container text-center">
       <h1 className="text-danger">LIFECYCLE METHODS</h1>
       <h3>COUNT={count}</h3>
       <button className="btn btn-info" onClick={handleInc}>
         INC
       </button>
     </div>
-    )
-  }
-  
-  export default UseEffectHook
-  
+  );
+};
+
+export default UseEffectHook;
