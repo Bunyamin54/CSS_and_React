@@ -91,25 +91,18 @@ const UseEffectHook = () => {
 
   // ! ComponentWillUnmount
 
-const fetchData = () => {
-  console.log("Data fetched")
-}
-  
-useEffect(() => {
-  const timer = setInterval(fetchData,5000);
+  const fetchData = () => {
+    console.log ('Data fetched');
+  };
 
+  useEffect (() => {
+    const timer = setInterval (fetchData, 5000);
 
-  return () => {
-    clearInterval(timer)
-    console.log("componentWillUnmount")
-  }
-}, [])
-
-
-
-
-
-
+    return () => {
+      clearInterval (timer);
+      console.log ('componentWillUnmount');
+    };
+  }, []);
 
   const handleInc = () => {
     setCount (count + 1); //? count state'i her degistiginde yukaridaki mount+update kismi calisitirilir.
