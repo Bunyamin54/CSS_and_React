@@ -247,3 +247,25 @@
    html bazinda vermek istedigmiz css leri @layer base ile veririz
 
     @apply ile css classlarini birlestiririz  component bazinda css veririz
+
+
+    *** USE EFFECT HOOK 
+
+
+    - componentdidmonunt ilk render sonrasi calisir
+    - componentdidupdate herhangi bir state veya prop degisikliginde calisir
+    - componentwillunmount componentin silinmesi durumunda calisir
+
+
+     method 
+
+   -  constructur - cocugun ana karnina dusmesi
+   -  render  - componentin doma basilmasi dogumu cocugun
+   -  componentdidmount -- cocugun dogum sonrasi ilk bakimi  kimlik karti isim verme 
+
+
+   componentDidMount() {
+     console.log("component did mount")
+   }   ilk render sonrasi calisir . 1 .kereye mahsus islemler icin calisir. ornegin hava durumu cekme istegi bir kere ,  interval baslatma icin . cocugun dogum sonrasi ilk isim verme ornegin ir kez yapilir kimlik karti isim verme
+
+
