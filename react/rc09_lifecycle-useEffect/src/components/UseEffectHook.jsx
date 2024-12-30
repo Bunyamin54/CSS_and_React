@@ -70,19 +70,31 @@ import { useState, useEffect } from "react"
 
    const[ count, setCount] = useState(0)
 
+  // useEffect(() => {
+
+  //    // !  //! fetch, async-await ,localStorage, setTimeout, setInterval();
+
+  //     console.log("componnetDidMount")
+  // setTimeout(() => {
+  //   alert("Data fetched")
+  // }, 2000)
+  // }, [])  // ? Dependecny array bos
+  
+
+
   useEffect(() => {
-  
-  
-    return () => {
-      
-    }
-  }, [])
-  
 
+    // !  //! fetch, async-await ,localStorage, setTimeout, setInterval();
 
+     console.log("componnetDidMount + componentDidUpdate")
+ setTimeout(() => {
+   alert("Data fetched")
+ }, 2000)
+ }, [count])  // ? Dependecny array bos
+ 
 
     const handleInc  = () => {
-      setCount(count + 1)
+      setCount(count + 1)  //? count state'i her degistiginde yukaridaki mount+update kismi calisitirilir.
     }
 
     return (
