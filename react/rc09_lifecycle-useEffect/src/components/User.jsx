@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const User = () => {
 
   // let userData =  "deneme"
 
   const [userData, setUserData] =  useState("")
+  
 
   const getUser = () => {
 
@@ -14,6 +15,11 @@ const User = () => {
     .catch ((error) => console.log(error))
   }
 
+    useEffect(() => {
+      
+      getUser()
+    }, [])
+    
   console.log(userData)
   
   return (
@@ -27,8 +33,8 @@ const User = () => {
       </h1>
       <h3>{userData?.email}</h3>
       <h4>{new Date(userData?.dob?.date).toLocaleDateString("no-NO")}</h4>
-      <h5>phone</h5>
-      <h6>address</h6>
+      <h5>{userData?.phone}</h5>
+      <h6>{userData?.location?.city}</h6>
 
 
   <button className='btn btn-success' onClick={getUser}>Get Random User</button>
