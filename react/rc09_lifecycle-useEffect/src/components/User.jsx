@@ -18,6 +18,7 @@ const User = () => {
     useEffect(() => {
       
       getUser()
+      
     }, [])
     
   console.log(userData)
