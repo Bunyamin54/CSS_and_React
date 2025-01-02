@@ -10,7 +10,7 @@ const Nav = () => {
         <NavLink to="/instructors">Instructors</NavLink>
       </li>
       <li>
-        <Link to ="/contact">Contact</Link>
+        <NavLink to ="/contact">Contact</NavLink>
       </li>
     </ul>
   );
