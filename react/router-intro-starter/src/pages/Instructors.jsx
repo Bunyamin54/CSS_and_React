@@ -10,8 +10,8 @@ const Instructors = () => {
      <Link to='/instructors/1'>Instructor 1</Link>
 
      {/*  // * relative path goreceli  */}
-     <Link to='2'>Instructor 2</Link>
-     <Link to='3'>Instructor 3</Link>
+     <Link to='2' state={{name: "Bunyamin"}}>Instructor 2</Link>
+     <Link to='3' state={{name: "Ayse"}}>  Instructor 3</Link>
     
     </div>
    </div>
