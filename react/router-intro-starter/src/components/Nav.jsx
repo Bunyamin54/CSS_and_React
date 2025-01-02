@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -7,7 +7,7 @@ const Nav = () => {
         <Link to href="/">Home</Link>
       </li>
       <li>
-        <Link to="/instructors">Instructors</Link>
+        <NavLink to="/instructors">Instructors</NavLink>
       </li>
       <li>
         <Link to ="/contact">Contact</Link>
