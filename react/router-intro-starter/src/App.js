@@ -1,5 +1,7 @@
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
+import About from "./components/About";
+import Courses from "./components/Courses";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Instructors from "./pages/Instructors";
@@ -11,10 +13,14 @@ function App() {
   return (
      <BrowserRouter>
       <Nav />
-      
       <Routes>
+        {/* <Route  path="/" element= {<Home />}  />   */}
+        <Route>  path="/" element= {<Home />}   
+          <Route  path ="/" element = {<Home/>} />
+          <Route index element = {<About/>}/>
+          <Route path = "courses" element = {<Courses/>}/>
+         </Route>
 
-        <Route  path="/" element= {<Home />}  />  
         <Route  path="/instructors"  element = {<Instructors />}  />  
         <Route  path="/instructors/:id"  element = {<InstructorsDetail />}  />  
         <Route  path="/contact" element = {<Contact />}  />  
