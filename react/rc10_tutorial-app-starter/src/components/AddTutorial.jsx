@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import axios from 'axios';
 
-const AddTutorial = () => {
+const AddTutorial = (getTutorials) => {
   const [title, setTitle] = useState ('');
   const [description, setDescription] = useState ('');
 
@@ -13,6 +13,7 @@ const AddTutorial = () => {
     postTutorial(newTutorial)
     setTitle('')
     setDescription('')
+   
   };
 
     const  postTutorial = async (newTutorial) => {
@@ -24,6 +25,8 @@ const AddTutorial = () => {
       } catch(error) {
         console.log(error);
       }
+
+      getTutorials(); 
     }
   return (
     <div className="container text-center mt-4">
