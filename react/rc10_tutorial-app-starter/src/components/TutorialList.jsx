@@ -13,6 +13,11 @@ const TutorialList = () => {
       title: "React",
       description: "JS library for UI design",
     },
+    {
+      id: 3,
+      title: "Jango",
+      description: "Jango library for UI design",
+    },
   ]
 
   return (
