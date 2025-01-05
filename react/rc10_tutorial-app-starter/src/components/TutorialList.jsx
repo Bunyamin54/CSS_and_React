@@ -1,5 +1,6 @@
 import { FaEdit } from "react-icons/fa"
 import { AiFillDelete } from "react-icons/ai"
+import axios from "axios"
 
 const TutorialList = ({tutorials}) => {
 
@@ -20,7 +21,20 @@ const TutorialList = ({tutorials}) => {
   //     description: "Jango library for UI design",
   //   },
   // ]
+ 
+  const handleDelete = async  (id) => {
 
+    const BASE_URL =" https://tutorial-api.fullstack.clarusway.com/tutorials/"
+
+     try {
+      await axios.delete(`${BASE_URL}/${id}/`)
+      console.log('deleted')
+      
+     } catch (error) {
+       console.log(error)
+      
+     }
+  }
   return (
     <div className="container mt-4">
       <table className="table table-striped">
@@ -51,7 +65,7 @@ const TutorialList = ({tutorials}) => {
                   <AiFillDelete
                     size={22}
                     type="button"
-                    className="text-danger "
+                    className="text-danger "  onClick={() => handleDelete(id)}
                   />
                 </td>
               </tr>
