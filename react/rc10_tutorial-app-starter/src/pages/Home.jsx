@@ -33,8 +33,8 @@ const Home = () => {
 
   return (
     <>
-      <AddTutorial  getTutorials= {getTutorials} />
-      <TutorialList tutorials= {tutorials } />
+      <AddTutorial  getTutorials={getTutorials} />
+      <TutorialList tutorials= {tutorials } getTutorials={getTutorials}  />
     </>
   );
 };

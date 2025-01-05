@@ -2,7 +2,7 @@ import { FaEdit } from "react-icons/fa"
 import { AiFillDelete } from "react-icons/ai"
 import axios from "axios"
 
-const TutorialList = ({tutorials}) => {
+const TutorialList = ({tutorials ,getTutorials }) => {
 
   // const tutorials = [
   //   {
@@ -24,16 +24,17 @@ const TutorialList = ({tutorials}) => {
  
   const handleDelete = async  (id) => {
 
-    const BASE_URL =" https://tutorial-api.fullstack.clarusway.com/tutorials/"
+    const BASE_URL =" https://tutorial-api.fullstack.clarusway.com/tutorials"
 
      try {
       await axios.delete(`${BASE_URL}/${id}/`)
-      console.log('deleted')
+      
       
      } catch (error) {
        console.log(error)
       
      }
+       getTutorials() 
   }
   return (
     <div className="container mt-4">
