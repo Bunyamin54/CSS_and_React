@@ -5,19 +5,25 @@ import { useState, useEffect } from "react";
 
 const Home = () => {
 
-  const [tutorial, setTutorial] = useState({
-   
-  })  
+  const [tutorials, setTutorials] = useState([])  
 
   const BASE_URL =" https://tutorial-api.fullstack.clarusway.com/tutorials/"
 
 
   const getTutorials = async () => {
-  const data = await axios(BASE_URL)
-  console.log(data.data)
+
+    try {
+      // const res = await axios(BASE_URL)
+      //  setTutorials(res.data)
+      const {data} = await axios(BASE_URL)
+       setTutorials(data)
+    } catch (error) {
+      console.log(error)
+    }
+  
   }
 
-   console.log(tutorial)
+   console.log(tutorials)
 
     //  * mount asamasinda istek atiliyor ve gelen veri setTutorial ile tutorial state'ine set ediliyor
    useEffect(() => {
@@ -28,7 +34,7 @@ const Home = () => {
   return (
     <>
       <AddTutorial />
-      <TutorialList />
+      <TutorialList tutorials= {tutorials } />
     </>
   );
 };

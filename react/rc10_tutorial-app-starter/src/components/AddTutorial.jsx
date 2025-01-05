@@ -1,17 +1,30 @@
-import { useState } from "react"
+import {useState} from 'react';
+import axios from 'axios';
 
 const AddTutorial = () => {
-  const [title, setTitle] = useState("")
-  const [description, setDescription] = useState("")
+  const [title, setTitle] = useState ('');
+  const [description, setDescription] = useState ('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
+    e.preventDefault ();
 
+    const newTutorial = {title: title, description: description};
+    console.log(newTutorial)
+    postTutorial(newTutorial)
+    setTitle('')
+    setDescription('')
+  };
 
+    const  postTutorial = async (newTutorial) => {
 
-
-    
-  }
-
+     const BASE_URL =" https://tutorial-api.fullstack.clarusway.com/tutorials/"
+      try {
+       const res= await axios.post(BASE_URL ,newTutorial)
+       console.log(res)
+      } catch(error) {
+        console.log(error);
+      }
+    }
   return (
     <div className="container text-center mt-4">
       <h1 className="display-6 text-danger">Add Your Tutorial</h1>
@@ -26,7 +39,7 @@ const AddTutorial = () => {
             id="title"
             placeholder="Enter your title"
             value={title}
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={e => setTitle (e.target.value)}
             required
           />
         </div>
@@ -40,7 +53,7 @@ const AddTutorial = () => {
             id="desc"
             placeholder="Enter your Description"
             value={description}
-            onChange={(e) => setDescription(e.target.value)}
+            onChange={e => setDescription (e.target.value)}
             required
           />
         </div>
@@ -49,7 +62,7 @@ const AddTutorial = () => {
         </button>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default AddTutorial
+export default AddTutorial;
