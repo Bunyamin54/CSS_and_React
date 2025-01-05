@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Modal = () => {
+const  EditTutorial = () => {
   return (
-    <>
-    {/* Button trigger modal */}
-    
-    {/* Modal */}
+
+ 
     <div
       className="modal fade"
       id="open-modal"
@@ -42,9 +40,9 @@ const Modal = () => {
         </div>
       </div>
     </div>
-  </>
+
   
   )
 }
 
-export default Modal
+export default EditTutorial

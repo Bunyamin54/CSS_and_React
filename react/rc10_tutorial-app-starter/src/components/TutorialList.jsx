@@ -1,7 +1,7 @@
 import { FaEdit } from "react-icons/fa"
 import { AiFillDelete } from "react-icons/ai"
 import axios from "axios"
-import Modal from "./Modal"
+import Modal from "./EditTutorial"
 
 const TutorialList = ({tutorials ,getTutorials }) => {
 
