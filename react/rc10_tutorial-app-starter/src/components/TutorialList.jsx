@@ -1,6 +1,7 @@
 import { FaEdit } from "react-icons/fa"
 import { AiFillDelete } from "react-icons/ai"
 import axios from "axios"
+import Modal from "./Modal"
 
 const TutorialList = ({tutorials ,getTutorials }) => {
 
@@ -73,7 +74,9 @@ const TutorialList = ({tutorials ,getTutorials }) => {
             )
           })}
         </tbody>
-      </table>
+      </table> 
+
+       <Modal />
     </div>
   )
 }
