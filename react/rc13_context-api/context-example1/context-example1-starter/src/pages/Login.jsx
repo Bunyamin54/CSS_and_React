@@ -19,7 +19,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate("/");
+    navigate(-1);
     // setUser({ email: "", password: "" });
 
   };
