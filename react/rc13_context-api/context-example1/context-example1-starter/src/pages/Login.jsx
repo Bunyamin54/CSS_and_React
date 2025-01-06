@@ -20,10 +20,11 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate("/");
+    // setUser({ email: "", password: "" });
 
   };
 
-  console.log(user)
+
   
   return (
     <Container>

@@ -13,6 +13,8 @@ function App() {
 
   const [user, setUser] = useState({ email: "", password: "" });
 
+  console.log(user)
+
   return (
 
       //   * uyuglamayi sarmaladik
