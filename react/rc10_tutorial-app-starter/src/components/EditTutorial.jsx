@@ -1,13 +1,22 @@
 import React from 'react'
 import {useState} from 'react';
+import {useEffect} from 'react';
 
 const  EditTutorial = ({editItem}) => {
+
+  const {id, description: newDescription, title :newTitle} = editItem;
    
   
-  const [title, setTitle] = useState ('');
-  const [description, setDescription] = useState ('');
+  const [title, setTitle] = useState ('newTitle');
+  const [description, setDescription] = useState ('newDescription');
 
+  useEffect(() => {
+   
+     setTitle(newTitle)
+     setDescription(newDescription)
 
+  }, [newTitle, newDescription])
+  
   return (
 
  
