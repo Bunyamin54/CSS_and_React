@@ -10,6 +10,8 @@ const  EditTutorial = ({editItem}) => {
   const [title, setTitle] = useState ('newTitle');
   const [description, setDescription] = useState ('newDescription');
 
+  // *  componentDidupdate  
+
   useEffect(() => {
    
      setTitle(newTitle)
