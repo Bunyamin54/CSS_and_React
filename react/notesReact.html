@@ -391,3 +391,34 @@ eger bir tutorialu guncellemek istersek PUT tutorials/:id/  ile guncellenir
 eger bir tutorialu silmek istersek DELETE tutorials/:id/  ile silinir
 
 
+*** Context Api
+
+props drillling yontemi  veri aktarilimi yapilir. 
+componentlerinin yenidnen kullanailirligini mumkun kilar  (reusable)
+
+ --- Global state kullanmak icin context api kullanilir.  Redux da store diye gecer 
+
+ --- state leri global context de tutariz ve tum componentlerden erisebiliriz.  useContext hooku ile erisilir.
+
+ yazmak icin ise createContext ile olusturulur ve provider ile sarmalanir
+
+  ornegin: 
+
+
+  conetx  - api 
+
+  --daha statik yapilarda 
+  --daha az global state kullanilirsa
+  --kucuk projelerde kullanilir
+  --authentication gibi durumlarda kullanilir
+  --theme ayarlari gibi durumlarda kullanilir
+  --language ayarlari gibi durumlarda kullanilir  1. kez secme gibi durumlarda kullanilir
+
+
+  Redux ne zaman mantikli 
+
+  --Daha hizli akis trendyol gibi projelerde kullanilir
+  --Daha fazla global state kullanilirsa
+  --Daha buyuk projelerde kullanilir
+  --Daha fazla state management gerektiren projelerde kullanilir
+
