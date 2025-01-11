@@ -26,3 +26,13 @@ let array : string [] = ["Hello", "World"];
 array.push(4); 
 
 //* gecersi veri atanmasina izin vermiyor. 
+
+let b = []
+
+//* any typinde oldugu icin her turlu veri alabilir.
+
+b.push(1);
+b.push["Hello"];
+
+
+ //* Tuples strcuturunu kullanarak array olusturabiliriz.

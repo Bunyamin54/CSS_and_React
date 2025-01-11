@@ -8,3 +8,6 @@ z = "Hello World";
 let arr = [1, 2, 3, 4, 5];
 let array = ["Hello", "World"];
 array.push(4);
+let b = [];
+b.push(1);
+b.push["Hello"];
