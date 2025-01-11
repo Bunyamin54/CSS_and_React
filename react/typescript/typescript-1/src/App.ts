@@ -212,3 +212,19 @@ let car3 : Car = "Honda"; // * hata verir cunku sadece BMW, Mercedes, Audi alabi
     selamla("Hello", "John");   //* Hello John
     selamla("Hello");  //* Hello User hata aldik cunku name parametresi zorunlu.
     selamla("Hello", "John", "Doe");  //* Hello John Doe  hata vermez cunku 3. parametre optionaldir.
+
+
+    //* rest parametreler ... ile belirtilir.
+
+
+     function add (num1 : number, ...numbers : number[]) {
+        let total = num1;
+
+
+        numbers.forEach(number => total +=number)
+        console.log(total)
+     }
+
+
+     add(5)
+        add(5,10)
