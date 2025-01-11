@@ -195,3 +195,20 @@ let car3 : Car = "Honda"; // * hata verir cunku sadece BMW, Mercedes, Audi alabi
     let someValue : unknown = "Hello World";
 
     console.log ((someValue as string).length); // * as ile tip donusumu yapilir.
+
+    //* Function Types 
+
+    //*  optional parametreler ? ile belirtilir.
+
+    function selamla(greet:string, name:string): string{if (!name) name = "User"
+
+  return `${greet} ${name}`;
+
+    } 
+
+    //* optional parametreler ? ile belirtilir.
+
+
+    selamla("Hello", "John");   //* Hello John
+    selamla("Hello");  //* Hello User hata aldik cunku name parametresi zorunlu.
+    selamla("Hello", "John", "Doe");  //* Hello John Doe  hata vermez cunku 3. parametre optionaldir.
