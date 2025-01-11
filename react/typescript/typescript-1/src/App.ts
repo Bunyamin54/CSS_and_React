@@ -257,3 +257,10 @@ let car3 : Car = "Honda"; // * hata verir cunku sadece BMW, Mercedes, Audi alabi
                 this.events.push(event);
             }
         }
+
+
+        const myCalendar = new MyCalendar(["Event1", "Event2"]);
+
+        myCalendar.addEvents ("Event3")
+        myCalendar.addEvents ("Event4")
+        myCalendar.addEvents ("Event5")

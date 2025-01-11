@@ -71,3 +71,16 @@ add(5, 10);
 const person1 = {
     name: "John",
 };
+class MyCalendar {
+    constructor(events) {
+        this.events = events;
+        this.events = events;
+    }
+    addEvents(event) {
+        this.events.push(event);
+    }
+}
+const myCalendar = new MyCalendar(["Event1", "Event2"]);
+myCalendar.addEvents("Event3");
+myCalendar.addEvents("Event4");
+myCalendar.addEvents("Event5");
