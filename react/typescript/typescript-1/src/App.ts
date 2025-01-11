@@ -1,8 +1,17 @@
-console.log("Hello world")
 
-let x = 10; 
+//* Typ annotation
+let x: number = 5;
+let y = "Hello World";
 
-let x = false
+y = X = 10;  
 
 
-//  comment not allowed to compile to app.js
+// stig beklerken integer gonderiliyor bunu uyariyor. 
+
+let z ; 
+
+//* cikarimda any diye bulunuyor ve degisikliklere izin veriyor any olursa java scripten farki kalmiyor.
+
+z = false;
+z = 10;
+z = "Hello World";
