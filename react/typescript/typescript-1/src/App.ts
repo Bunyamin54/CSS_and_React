@@ -164,7 +164,7 @@ let car3 : Car = "Honda"; // * hata verir cunku sadece BMW, Mercedes, Audi alabi
 
  araba.year = 2022; //* hata verir cunku readonly oldugu icin degistirilemez.
 
- //* Intersection  &
+ //* Intersection  &  2 type birlestiryorz ve birlesimini olusturuyoruz.
 
  type Book = {
 
@@ -174,7 +174,7 @@ let car3 : Car = "Honda"; // * hata verir cunku sadece BMW, Mercedes, Audi alabi
 
  type Author = {    
     
-        author_id: number,
+        author_id?: number,
         author_name: string,
  }
 
@@ -187,3 +187,11 @@ let car3 : Car = "Honda"; // * hata verir cunku sadece BMW, Mercedes, Audi alabi
         author_id: 1,
         author_name: "John"
     }
+
+
+
+    // * Type Assertions as ile tip donusumu yapilir.  
+
+    let someValue : unknown = "Hello World";
+
+    console.log ((someValue as string).length); // * as ile tip donusumu yapilir.
