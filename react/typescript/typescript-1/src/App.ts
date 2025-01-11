@@ -96,3 +96,50 @@ const enum Mixed {
     Magenta = 5,
     Brown, 
 }
+
+//* Any unknown 
+
+ let a : any = 10;
+
+ let c : number = 20;   
+
+
+ let d : unknown = 4;
+
+
+let f : number = d as number; // * as ile tip donusumu yapabiliriz.
+
+
+//* Void fonksiyon donus tipi 
+
+function hello() : void {
+    console.log("Hello World");
+}
+
+//* return ozelligi olmayan fonksiyonlarda void kullanilir.
+
+//* never fonksiyonun hicbir zaman bitmeyecegini belirtir.
+
+function error(message: string) : never {
+    throw new Error(message);
+}
+
+
+//* Type Aliases  kisa yol olusturmamizi saglar.
+
+type check = string | number
+let t : check
+t = 10;
+t = "Hello World";
+t = false  // * hata verir cunku string ve number alabilir. boolean alamaz.
+
+
+let u : check = 20;
+
+//* String literal types  degiskenin alacagi degeri belirler. 
+
+type Car = "BMW" | "Mercedes" | "Audi";
+
+let car1 : Car = "BMW";
+let car2 : Car = "Mercedes";
+let car3 : Car = "Honda"; // * hata verir cunku sadece BMW, Mercedes, Audi alabilir.
