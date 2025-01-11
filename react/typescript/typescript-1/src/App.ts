@@ -163,3 +163,27 @@ let car3 : Car = "Honda"; // * hata verir cunku sadece BMW, Mercedes, Audi alabi
  }
 
  araba.year = 2022; //* hata verir cunku readonly oldugu icin degistirilemez.
+
+ //* Intersection  &
+
+ type Book = {
+
+    book_id: number,
+    book_name: string,
+ }
+
+ type Author = {    
+    
+        author_id: number,
+        author_name: string,
+ }
+
+ type Intersection_type = Book & Author;
+
+    let book : Intersection_type = {
+    
+        book_id: 1234,
+        book_name: "Typescript",
+        author_id: 1,
+        author_name: "John"
+    }
