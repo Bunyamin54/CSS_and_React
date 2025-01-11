@@ -43,4 +43,13 @@ b.push["Hello"];
 
  myTuple = [1, true, "Hello"];
 
- myTuple = [1, "Hello", true]; // hata verir.  cunku sirayla olmasi gerekiyor.  abit sayida sabit tiplerde array olusturabiliriz.
+ myTuple = [1, "Hello", true]; // * hata verir.  cunku sirayla olmasi gerekiyor.  abit sayida sabit tiplerde array olusturabiliriz.
+
+  //* Tuple array
+
+ let arrTuples ; [number,string][] ;
+ 
+ arrTuples = [[1, "Hello"], [2, "Worls"], [3, "Typescript"]];
+
+
+ arrTuples.push ([4,"React"])
