@@ -143,3 +143,23 @@ type Car = "BMW" | "Mercedes" | "Audi";
 let car1 : Car = "BMW";
 let car2 : Car = "Mercedes";
 let car3 : Car = "Honda"; // * hata verir cunku sadece BMW, Mercedes, Audi alabilir.
+
+
+//? Intersection - Birlesim  & ile birlesim yapilir.
+
+ //* Object types
+
+ const araba : {
+
+    make :string,
+    model: string,
+    readonly year: number,  //* readonly ile degistirilemez yapilir.
+    sunfoof?: boolean  // * ? ile istege bagli yapilir.  yoksa asagida bielirtmemiz lazm sunroof : false gibi.
+ } = {
+
+      make: "BMW",
+        model: "X5",
+        year: 2021,
+ }
+
+ araba.year = 2022; //* hata verir cunku readonly oldugu icin degistirilemez.
