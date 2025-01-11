@@ -1,14 +1,12 @@
-
 //* Typ annotation
 let x: number = 5;
 let y = "Hello World";
 
-y = X = 10;  
+y = X = 10;
 
+// stig beklerken integer gonderiliyor bunu uyariyor.
 
-// stig beklerken integer gonderiliyor bunu uyariyor. 
-
-let z ; 
+let z;
 
 //* cikarimda any diye bulunuyor ve degisikliklere izin veriyor any olursa java scripten farki kalmiyor.
 
@@ -16,48 +14,46 @@ z = false;
 z = 10;
 z = "Hello World";
 
-
 //* Array in typescript birden fazla tip alabilir.
 
-let arr: number[] = [1,2,3,4,5];
+let arr: number[] = [1, 2, 3, 4, 5];
 
-let array : string [] = ["Hello", "World"];
+let array: string[] = ["Hello", "World"];
 
-array.push(4); 
+array.push(4);
 
-//* gecersi veri atanmasina izin vermiyor. 
+//* gecersi veri atanmasina izin vermiyor.
 
-let b = []
+let b = [];
 
 //* any typinde oldugu icin her turlu veri alabilir.
 
 b.push(1);
 b.push["Hello"];
 
+//* Tuples strcuturunu kullanarak array olusturabiliriz. 2. bir deger belirleyebiliriz.
 
- //* Tuples strcuturunu kullanarak array olusturabiliriz. 2. bir deger belirleyebiliriz.
+let myTuple: [number, boolean, string];
 
+myTuple = [1, true, "Hello"];
 
- let myTuple : [ number, boolean, string];
+myTuple = [1, "Hello", true]; // * hata verir.  cunku sirayla olmasi gerekiyor.  abit sayida sabit tiplerde array olusturabiliriz.
 
+//* Tuple array
 
- myTuple = [1, true, "Hello"];
+let arrTuples: [number, string][];
 
- myTuple = [1, "Hello", true]; // * hata verir.  cunku sirayla olmasi gerekiyor.  abit sayida sabit tiplerde array olusturabiliriz.
+arrTuples = [
+  [1, "Hello"],
+  [2, "Worls"],
+  [3, "Typescript"],
+];
 
-  //* Tuple array
+arrTuples.push([4, "React"]);
 
- let arrTuples: [number,string][] ;
- 
- arrTuples = [[1, "Hello"], [2, "Worls"], [3, "Typescript"]];
-
-
- arrTuples.push ([4,"React"])
-
-
- //* Enum 
- //* herhangi bir  iki nokta vs yok   
- //* const kullninca karmasiklik ortadan kalkiyor kodda 
+//* Enum
+//* herhangi bir  iki nokta vs yok
+//* const kullninca karmasiklik ortadan kalkiyor kodda
 
 //  enum Colors {
 //      RED ,
@@ -66,201 +62,194 @@ b.push["Hello"];
 //  }
 
 const enum Color {
-    Red ,
-    Green  = 100,
-    Blue =Green + 5,
-    Yellow  
+  Red,
+  Green = 100,
+  Blue = Green + 5,
+  Yellow,
 }
 
-console.log(Color.Green)
-console.log(Color.Blue)
-console.log(Color.Yellow)
+console.log(Color.Green);
+console.log(Color.Blue);
+console.log(Color.Yellow);
 
 //* Enum string olarakta tanimlanabilir.  stringde deger vermek zorundayiz
 
 const enum Tshirt {
-    Small = "S",
-    Medium = "M",
-    Large = "L"
+  Small = "S",
+  Medium = "M",
+  Large = "L",
 }
 
-console.log(Tshirt.Small)
+console.log(Tshirt.Small);
 
 //* Mix enum
 
 const enum Mixed {
-    Red,
-    Green,
-    Blue = "Mavi",
-    Yellow = "sari",
-    Magenta = 5,
-    Brown, 
+  Red,
+  Green,
+  Blue = "Mavi",
+  Yellow = "sari",
+  Magenta = 5,
+  Brown,
 }
 
-//* Any unknown 
+//* Any unknown
 
- let a : any = 10;
+let a: any = 10;
 
- let c : number = 20;   
+let c: number = 20;
 
+let d: unknown = 4;
 
- let d : unknown = 4;
+let f: number = d as number; // * as ile tip donusumu yapabiliriz.
 
+//* Void fonksiyon donus tipi
 
-let f : number = d as number; // * as ile tip donusumu yapabiliriz.
-
-
-//* Void fonksiyon donus tipi 
-
-function hello() : void {
-    console.log("Hello World");
+function hello(): void {
+  console.log("Hello World");
 }
 
 //* return ozelligi olmayan fonksiyonlarda void kullanilir.
 
 //* never fonksiyonun hicbir zaman bitmeyecegini belirtir.
 
-function error(message: string) : never {
-    throw new Error(message);
+function error(message: string): never {
+  throw new Error(message);
 }
-
 
 //* Type Aliases  kisa yol olusturmamizi saglar.
 
-type check = string | number
-let t : check
+type check = string | number;
+let t: check;
 t = 10;
 t = "Hello World";
-t = false  // * hata verir cunku string ve number alabilir. boolean alamaz.
+t = false; // * hata verir cunku string ve number alabilir. boolean alamaz.
 
+let u: check = 20;
 
-let u : check = 20;
-
-//* String literal types  degiskenin alacagi degeri belirler. 
+//* String literal types  degiskenin alacagi degeri belirler.
 
 type Car = "BMW" | "Mercedes" | "Audi";
 
-let car1 : Car = "BMW";
-let car2 : Car = "Mercedes";
-let car3 : Car = "Honda"; // * hata verir cunku sadece BMW, Mercedes, Audi alabilir.
-
+let car1: Car = "BMW";
+let car2: Car = "Mercedes";
+let car3: Car = "Honda"; // * hata verir cunku sadece BMW, Mercedes, Audi alabilir.
 
 //? Intersection - Birlesim  & ile birlesim yapilir.
 
- //* Object types
+//* Object types
 
- const araba : {
+const araba: {
+  make: string;
+  model: string;
+  readonly year: number; //* readonly ile degistirilemez yapilir.
+  sunfoof?: boolean; // * ? ile istege bagli yapilir.  yoksa asagida bielirtmemiz lazm sunroof : false gibi.
+} = {
+  make: "BMW",
+  model: "X5",
+  year: 2021,
+};
 
-    make :string,
-    model: string,
-    readonly year: number,  //* readonly ile degistirilemez yapilir.
-    sunfoof?: boolean  // * ? ile istege bagli yapilir.  yoksa asagida bielirtmemiz lazm sunroof : false gibi.
- } = {
+araba.year = 2022; //* hata verir cunku readonly oldugu icin degistirilemez.
 
-      make: "BMW",
-        model: "X5",
-        year: 2021,
- }
+//* Intersection  &  2 type birlestiryorz ve birlesimini olusturuyoruz.
 
- araba.year = 2022; //* hata verir cunku readonly oldugu icin degistirilemez.
+type Book = {
+  book_id: number;
+  book_name: string;
+};
 
- //* Intersection  &  2 type birlestiryorz ve birlesimini olusturuyoruz.
+type Author = {
+  author_id?: number;
+  author_name: string;
+};
 
- type Book = {
+type Intersection_type = Book & Author;
 
-    book_id: number,
-    book_name: string,
- }
+let book: Intersection_type = {
+  book_id: 1234,
+  book_name: "Typescript",
+  author_id: 1,
+  author_name: "John",
+};
 
- type Author = {    
-    
-        author_id?: number,
-        author_name: string,
- }
+// * Type Assertions as ile tip donusumu yapilir.
 
- type Intersection_type = Book & Author;
+let someValue: unknown = "Hello World";
 
-    let book : Intersection_type = {
-    
-        book_id: 1234,
-        book_name: "Typescript",
-        author_id: 1,
-        author_name: "John"
-    }
+console.log((someValue as string).length); // * as ile tip donusumu yapilir.
 
+//* Function Types
 
+//*  optional parametreler ? ile belirtilir.
 
-    // * Type Assertions as ile tip donusumu yapilir.  
-
-    let someValue : unknown = "Hello World";
-
-    console.log ((someValue as string).length); // * as ile tip donusumu yapilir.
-
-    //* Function Types 
-
-    //*  optional parametreler ? ile belirtilir.
-
-    function selamla(greet:string, name:string): string{if (!name) name = "User"
+function selamla(greet: string, name: string): string {
+  if (!name) name = "User";
 
   return `${greet} ${name}`;
+}
 
-    } 
+//* optional parametreler ? ile belirtilir.
 
-    //* optional parametreler ? ile belirtilir.
+selamla("Hello", "John"); //* Hello John
+selamla("Hello"); //* Hello User hata aldik cunku name parametresi zorunlu.
+selamla("Hello", "John", "Doe"); //* Hello John Doe  hata vermez cunku 3. parametre optionaldir.
 
+//* rest parametreler ... ile belirtilir.
 
-    selamla("Hello", "John");   //* Hello John
-    selamla("Hello");  //* Hello User hata aldik cunku name parametresi zorunlu.
-    selamla("Hello", "John", "Doe");  //* Hello John Doe  hata vermez cunku 3. parametre optionaldir.
+function add(num1: number, ...numbers: number[]) {
+  let total = num1;
 
+  numbers.forEach((number) => (total += number));
+  console.log(total);
+}
 
-    //* rest parametreler ... ile belirtilir.
+add(5);
+add(5, 10);
 
+//* Interface in Typescript
 
-     function add (num1 : number, ...numbers : number[]) {
-        let total = num1;
+//     *     structurunun belirlenmesi icin kullanilir
 
+//   * implements key word kullanilir.
 
-        numbers.forEach(number => total +=number)
-        console.log(total)
-     }
+//   * interface objeler icin kullanilir.
 
+interface Person {
+  name: string;
+}
 
-     add(5)
-        add(5,10)
+const person1: Person = {
+  name: "John",
+};
 
+interface Calendar {
+  events: string[];
+  addEvents(event: string): void;
+}
 
-        //* Interface in Typescript
+class MyCalendar implements Calendar {
+  constructor(public events: string[]) {
+    this.events = events;
+  }
 
+  addEvents(event: string): void {
+    this.events.push(event);
+  }
+}
 
-        interface Person {
-            name: string,
-        }
+const myCalendar = new MyCalendar(["Event1", "Event2"]);
 
-        const person1 : Person = {
-            name: "John",
-        }
+myCalendar.addEvents("Event3");
+myCalendar.addEvents("Event4");
+myCalendar.addEvents("Event5");
 
+interface Point {
+  x: number;
+}
 
-        interface Calendar {
-            events: string[];
-            addEvents(event:string): void;
-        }
+interface Point {
+  y: number;
+}
 
-        class MyCalendar implements Calendar {
-
-            constructor(public events: string []) {
-                this.events = events;
-            }
-
-            addEvents (event:string) : void {
-                this.events.push(event);
-            }
-        }
-
-
-        const myCalendar = new MyCalendar(["Event1", "Event2"]);
-
-        myCalendar.addEvents ("Event3")
-        myCalendar.addEvents ("Event4")
-        myCalendar.addEvents ("Event5")
+const point1: Point = { x: 20, y: 40 };
