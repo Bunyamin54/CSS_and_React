@@ -35,4 +35,12 @@ b.push(1);
 b.push["Hello"];
 
 
- //* Tuples strcuturunu kullanarak array olusturabiliriz.
+ //* Tuples strcuturunu kullanarak array olusturabiliriz. 2. bir deger belirleyebiliriz.
+
+
+ let myTuple : [ number, boolean, string];
+
+
+ myTuple = [1, true, "Hello"];
+
+ myTuple = [1, "Hello", true]; // hata verir.  cunku sirayla olmasi gerekiyor.  abit sayida sabit tiplerde array olusturabiliriz.

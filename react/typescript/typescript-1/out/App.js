@@ -11,3 +11,6 @@ array.push(4);
 let b = [];
 b.push(1);
 b.push["Hello"];
+let myTuple;
+myTuple = [1, true, "Hello"];
+myTuple = [1, "Hello", true];
