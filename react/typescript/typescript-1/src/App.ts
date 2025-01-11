@@ -75,3 +75,24 @@ const enum Color {
 console.log(Color.Green)
 console.log(Color.Blue)
 console.log(Color.Yellow)
+
+//* Enum string olarakta tanimlanabilir.  stringde deger vermek zorundayiz
+
+const enum Tshirt {
+    Small = "S",
+    Medium = "M",
+    Large = "L"
+}
+
+console.log(Tshirt.Small)
+
+//* Mix enum
+
+const enum Mixed {
+    Red,
+    Green,
+    Blue = "Mavi",
+    Yellow = "sari",
+    Magenta = 5,
+    Brown, 
+}

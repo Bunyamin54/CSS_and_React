@@ -20,3 +20,4 @@ arrTuples.push([4, "React"]);
 console.log(100);
 console.log(105);
 console.log(106);
+console.log("S");
