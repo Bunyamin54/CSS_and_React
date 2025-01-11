@@ -47,9 +47,31 @@ b.push["Hello"];
 
   //* Tuple array
 
- let arrTuples ; [number,string][] ;
+ let arrTuples: [number,string][] ;
  
  arrTuples = [[1, "Hello"], [2, "Worls"], [3, "Typescript"]];
 
 
  arrTuples.push ([4,"React"])
+
+
+ //* Enum 
+ //* herhangi bir  iki nokta vs yok   
+ //* const kullninca karmasiklik ortadan kalkiyor kodda 
+
+//  enum Colors {
+//      RED ,
+//      GREEN ,
+//      BLUE
+//  }
+
+const enum Color {
+    Red ,
+    Green  = 100,
+    Blue =Green + 5,
+    Yellow  
+}
+
+console.log(Color.Green)
+console.log(Color.Blue)
+console.log(Color.Yellow)
