@@ -15,3 +15,14 @@ let z ;
 z = false;
 z = 10;
 z = "Hello World";
+
+
+//* Array in typescript birden fazla tip alabilir.
+
+let arr: number[] = [1,2,3,4,5];
+
+let array : string [] = ["Hello", "World"];
+
+array.push(4); 
+
+//* gecersi veri atanmasina izin vermiyor. 
