@@ -253,3 +253,22 @@ interface Point {
 }
 
 const point1: Point = { x: 20, y: 40 };
+
+
+ //* Genercis in Typescript
+
+const names: string [] =[]
+
+const names2 : Array <string> = [ "John", "Doe"]
+
+const nums : Array <number> = [1,2,3 ]
+
+
+//* 
+
+
+function merge<T, U>(obj1: T, obj2: U) {
+    return Object.assign(obj1, obj2)
+} 
+
+//* T ve U yerine string ve number yazilabilir.
