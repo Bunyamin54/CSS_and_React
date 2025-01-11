@@ -228,3 +228,32 @@ let car3 : Car = "Honda"; // * hata verir cunku sadece BMW, Mercedes, Audi alabi
 
      add(5)
         add(5,10)
+
+
+        //* Interface in Typescript
+
+
+        interface Person {
+            name: string,
+        }
+
+        const person1 : Person = {
+            name: "John",
+        }
+
+
+        interface Calendar {
+            events: string[];
+            addEvents(event:string): void;
+        }
+
+        class MyCalendar implements Calendar {
+
+            constructor(public events: string []) {
+                this.events = events;
+            }
+
+            addEvents (event:string) : void {
+                this.events.push(event);
+            }
+        }

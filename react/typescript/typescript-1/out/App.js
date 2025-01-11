@@ -68,3 +68,6 @@ function add(num1, ...numbers) {
 }
 add(5);
 add(5, 10);
+const person1 = {
+    name: "John",
+};
